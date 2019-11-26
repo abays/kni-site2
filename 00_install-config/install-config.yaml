@@ -49,7 +49,7 @@ platform:
          sdnMacAddress: 0c:c4:7a:19:70:cc
          hardwareProfile: default
          # If an osProfile/type is not defined, rhe node defaults to RHCOS
-         # osProfile: 
+         osProfile: 
             type: centos7
             # With type: rhcos the following are settings are available
             pxe: bios    # pxe boot type either bios (default if not specified) or uefi
