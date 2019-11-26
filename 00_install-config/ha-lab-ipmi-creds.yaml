@@ -3,7 +3,7 @@ kind: Secret
 metadata:
   name:  ha-lab-ipmi
 stringdata:
-   username: cm9vdAo=
-   password: Y2FsdmluCg==
+   username: QURNSU4=
+   password: QURNSU4=
    
 type: Opaque

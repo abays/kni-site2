@@ -1,6 +1,6 @@
 apiVersion: v1
 kind: InstallConfig
-baseDomain: sriov.testing
+baseDomain: abays.testing
 compute:
  - name: worker
    replicas: 1
@@ -27,10 +27,10 @@ platform:
       -  name: master-0
          role: master
          bmc:
-            address: ipmi://10.19.111.51
+            address: ipmi://10.19.110.12
             credentialsName: ha-lab-ipmi
-         bootMACAddress: 3c:fd:fe:cd:35:49  # provisioning network mac
-         sdnMacAddress: 3c:fd:fe:cd:35:48   # baremetal network mac
+         bootMACAddress: 0C:C4:7A:DB:A9:93  # provisioning network mac
+         sdnMacAddress: 0c:c4:7a:19:6f:92   # baremetal network mac
          # sdnIPAddress: 192.168.111.11     # Optional -- Set static IP
          hardwareProfile: default
          osProfile: 
@@ -43,13 +43,13 @@ platform:
       -  name: worker-0
          role: worker
          bmc: 
-            address: ipmi://10.19.111.55
+            address: ipmi://10.19.110.10
             credentialsName: ha-lab-ipmi
-         bootMACAddress: 3c:fd:fe:cd:31:bd
-         sdnMacAddress: 3c:fd:fe:cd:31:bc 
+         bootMACAddress: 0C:C4:7A:DB:A8:59
+         sdnMacAddress: 0c:c4:7a:19:70:cc
          hardwareProfile: default
          # If an osProfile/type is not defined, rhe node defaults to RHCOS
-         osProfile: 
+         # osProfile: 
             type: centos7
             # With type: rhcos the following are settings are available
             pxe: bios    # pxe boot type either bios (default if not specified) or uefi
