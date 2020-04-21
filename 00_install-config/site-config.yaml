@@ -3,7 +3,8 @@ kind: SiteConfig
 metadata:
   name: notImportantHere
 config:
-  releaseImageOverride: registry.svc.ci.openshift.org/origin/release:4.2
+  releaseImageOverride: registry.svc.ci.openshift.org/origin/release:4.3
+  virtualizedInstall: "true"
 provisioningInfrastructure:
   hosts:
     # interface to use for provisioning on the masters
