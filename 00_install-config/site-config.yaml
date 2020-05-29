@@ -6,15 +6,7 @@ config:
   releaseImageOverride: registry.svc.ci.openshift.org/origin/release:4.3
   virtualizedInstall: "true"
 provisioningInfrastructure:
-  hosts:
-    # interface to use for provisioning on the masters
-    masterBootInterface: eno2
-    # interface to use for provisioning on the workers
-    workerBootInterface: eno2
-    # interface to use for baremetal on the masters
-    masterSdnInterface: ens1f0
-    # interface to use for baremetal on the workers
-    workerSdnInterface: ens1f0
+  hosts: []
 
   network:
     # The provisioning network's CIDR
